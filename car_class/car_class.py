@@ -1,5 +1,6 @@
 class Car:
     def __init__(self, year_model, make):
-        self.year_model = year_model
-        self.make = make
-        self.speed = 0
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+
