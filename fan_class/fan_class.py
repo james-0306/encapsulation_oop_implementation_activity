@@ -35,7 +35,13 @@ class Fan:
     def color(self, new_color):
         self.__color = new_color
 
-    
+    @property
+    def is_on(self):
+        return self.__on
+    @is_on.setter
+    def is_on(self, activity):
+        self.__on = (activity)
+
 
 
 
