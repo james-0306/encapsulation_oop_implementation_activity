@@ -28,7 +28,14 @@ class Fan:
     def radius(self, new_radius):
         self.__radius = float(new_radius)
 
+    @property
+    def color(self):
+        return self.__color
+    @color.setter
+    def color(self, new_color):
+        self.__color = new_color
 
+    
 
 
 
