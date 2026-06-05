@@ -20,7 +20,15 @@ class Fan:
         else:
             raise ValueError("Invalid speed")
 
-    
+    @property
+    def radius(self):
+        return self.__radius
+
+    @radius.setter
+    def radius(self, new_radius):
+        self.__radius = float(new_radius)
+
+
 
 
 
